@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Infrastructure - St. Mary's Educational Institutions</title>
+    <link rel="stylesheet" href="/src/css/style.css" />
+    <link rel="stylesheet" href="/src/css/components.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+
+<body>
+    <!-- Floating Icons Container -->
+    <div id="floating-icons-container"></div>
+
+    <!-- Navigation -->
+    <nav class="glass-panel" style="border-radius: 0; border: none; border-bottom: 1px solid var(--glass-border);">
+        <div class="container"
+            style="display: flex; justify-content: space-between; align-items: center; height: 80px;">
+            <div class="logo"
+                style="font-family: var(--font-header); font-weight: 700; font-size: 1.5rem; color: var(--primary-color);">
+                <i class="fas fa-graduation-cap"></i> St. Mary's
+            </div>
+            <ul class="nav-links" style="display: flex; gap: 2rem;">
+                <li><a href="/">Home</a></li>
+                <li><a href="/about.html">About Us</a></li>
+                <li><a href="/public-school.html">St Mary's Public School</a></li>
+                <li><a href="/convent.html">St Mary's Convent</a></li>
+                <li><a href="/infrastructure.html" class="active">Infrastructure</a></li>
+            </ul>
+            <div class="mobile-menu-btn" style="display: none;">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="section infra-hero">
+            <div class="container text-center">
+                <h1 class="split-color-heading" style="color: #fff !important;">World-Class <span
+                        style="color: var(--secondary-color);">Infrastructure</span></h1>
+                <p style="color: #fff; font-size: 1.2rem; margin-top: 1rem;">Creating an environment where learning
+                    thrives</p>
+            </div>
+        </section>
+
+        <!-- Facilities Section -->
+        <section class="section facilities-section">
+            <div class="container">
+                <h2 class="text-center" style="margin-bottom: 3rem;">State of the Art <span>Facilities</span></h2>
+                <div class="facilities-grid">
+                    <!-- Card 1 -->
+                    <div class="glass-panel facility-card">
+                        <div class="facility-icon"><i class="fas fa-desktop"></i></div>
+                        <h3>Smart Classrooms</h3>
+                        <p>Digital learning with interactive boards, projectors, and audio-visual aids in every
+                            classroom.</p>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="glass-panel facility-card">
+                        <div class="facility-icon"><i class="fas fa-flask"></i></div>
+                        <h3>Science Labs</h3>
+                        <p>Fully equipped Physics, Chemistry, and Biology laboratories for hands-on experiments.</p>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="glass-panel facility-card">
+                        <div class="facility-icon"><i class="fas fa-laptop-code"></i></div>
+                        <h3>Computer Lab</h3>
+                        <p>Modern computer lab with latest systems, high-speed internet, and coding curriculum.</p>
+                    </div>
+                    <!-- Card 4 -->
+                    <div class="glass-panel facility-card">
+                        <div class="facility-icon"><i class="fas fa-book"></i></div>
+                        <h3>Library</h3>
+                        <p>Extensive collection of 10,000+ books, digital resources, and quiet reading zones.</p>
+                    </div>
+                    <!-- Card 5 -->
+                    <div class="glass-panel facility-card">
+                        <div class="facility-icon"><i class="fas fa-futbol"></i></div>
+                        <h3>Playground</h3>
+                        <p>Expansive grounds for cricket, football, basketball, athletics, and outdoor activities.</p>
+                    </div>
+                    <!-- Card 6 -->
+                    <div class="glass-panel facility-card">
+                        <div class="facility-icon"><i class="fas fa-bus-alt"></i></div>
+                        <h3>Transportation</h3>
+                        <p>Safe and comfortable bus service covering all major routes with GPS tracking.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Showcase -->
+        <section class="section gallery-section">
+            <div class="container">
+                <div class="section-header center-header"
+                    style="justify-content: center; flex-direction: column; gap: 1rem;">
+                    <h2>Campus <span>Gallery</span></h2>
+
+                    <div class="gallery-filters glass-panel">
+                        <button class="filter-btn active" data-filter="all">All</button>
+                        <button class="filter-btn" data-filter="yoga">Yoga</button>
+                        <button class="filter-btn" data-filter="music">Music</button>
+                        <button class="filter-btn" data-filter="labs">Labs</button>
+                        <button class="filter-btn" data-filter="playground">Playground</button>
+                    </div>
+                </div>
+
+                <div class="gallery-grid">
+                    <!-- Grid items (Masonry style basically via CSS Grid) -->
+                    <div class="gallery-item" data-category="labs">
+                        <img src="/public/images/science-lab.png" loading="lazy" alt="Science Lab">
+                        <div class="gallery-overlay">
+                            <span>Science Lab</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="playground">
+                        <img src="/public/images/school-playground.png" loading="lazy" alt="Playground">
+                        <div class="gallery-overlay">
+                            <span>Sports Complex</span>
+                        </div>
+                    </div>
+                    <!-- Placeholder items re-using images for demo -->
+                    <div class="gallery-item" data-category="yoga">
+                        <img src="/public/images/student-hero.png" style="object-fit: cover; height: 100%;"
+                            loading="lazy" alt="Yoga Session">
+                        <div class="gallery-overlay">
+                            <span>Yoga Session</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="music">
+                        <img src="/public/images/school-building.png" style="object-fit: cover; height: 100%;"
+                            loading="lazy" alt="Music Class">
+                        <div class="gallery-overlay">
+                            <span>Music Class</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="labs">
+                        <img src="/public/images/science-lab.png" loading="lazy" alt="Computer Lab">
+                        <div class="gallery-overlay">
+                            <span>Computer Lab</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="playground">
+                        <img src="/public/images/school-playground.png" loading="lazy" alt="Basketball Court">
+                        <div class="gallery-overlay">
+                            <span>Basketball Court</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-wave">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path
+                    d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                    class="shape-fill"></path>
+            </svg>
+        </div>
+        <div class="footer-content">
+            <div class="footer-columns">
+                <!-- Col 1: Contact -->
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <p>
+                        <strong>St. Mary's Convent</strong><br>
+                        and St. Mary's Public School<br>
+                        No.1, T.Dasarahalli,<br>
+                        Bengaluru - 560057 Karnataka, India
+                    </p>
+                    <p style="margin-top: 1rem;">
+                        Phone: 080 - 28392711<br>
+                        <span style="display:inline-block; margin-left: 45px;">080 - 25791858</span>
+                    </p>
+                    <p>Email: info@stmarys-school.in</p>
+                </div>
+
+                <!-- Col 2: Navigation -->
+                <div class="footer-col">
+                    <h3>Navigation</h3>
+                    <ul class="footer-links">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/about.html">About Us</a></li>
+                        <li><a href="/public-school.html">St. Mary's Public School</a></li>
+                        <li><a href="/convent.html">St. Mary's Convent</a></li>
+                        <li><a href="/infrastructure.html">Infrastructure</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Social Media -->
+                <div class="footer-col">
+                    <h3>Social Media</h3>
+                    <div class="social-icons-footer">
+                        <a href="https://www.instagram.com/st_marysconvent/" target="_blank" class="social-btn"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/STMARYSCONVENT91/?ref=pages_you_manage" target="_blank"
+                            class="social-btn"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; Copyright 2025. St. Mary's Educational Institutions. All Rights Reserved.
+        </div>
+    </footer>
+
+    <script type="module" src="/src/js/main.js"></script>
+    <!-- Add Gallery Logic specific listener here or in main.js? main.js is cleaner -->
+</body>
+
+</html>
